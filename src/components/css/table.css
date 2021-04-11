@@ -1,0 +1,166 @@
+.table-page {
+    background: url('../../img/bg.png')center center/cover;
+    height: 90vh;
+    background-position: bottom;
+}
+
+.table-content {
+    margin-top: 8vh;
+    display: table-caption;
+    width: 100vw;
+}
+
+.inner-table-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: Revel 0.5s forwards;
+}
+
+.chosen-companies {
+    display: flex;
+    flex-direction: row;
+}
+
+.chosen-companies p {
+    margin: 0.5rem;
+}
+
+.company-display-p {
+    display: block;
+}
+
+.table {
+    height: 65vh;
+    display: block;
+    margin: 1.5rem;
+    overflow-y: scroll;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: Revel 0.5s forwards;
+}
+
+
+th,
+td {
+    outline: 1px solid #c3bfb4d0;
+    text-align: center;
+    font-size: small;
+    max-width: 15rem;
+}
+th > div{
+align-items: center;
+justify-content: space-evenly !important;
+}
+
+th button{
+    background: none;
+    outline: none;
+    border: none;
+    transition: transform 0.1s;
+    transform: scale(1);
+}
+
+th button:hover{
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+table {
+    border-spacing: 0.2rem;
+}
+
+tbody:nth-child(odd) {
+    background: #c3bfb4c6;
+}
+
+tbody {
+
+    opacity: 0.8;
+    background: #c3bfb480;
+}
+
+tbody:hover {
+    background: #c3bfb4d0;
+    opacity: 1;
+}
+
+.green {
+    background: rgba(187, 255, 156, 0.707);
+}
+
+.red {
+    background: #ec4c4cd5;
+}
+
+.add-to-compare,
+.add-to-favorite {
+    cursor: pointer;
+    width: 4vw;
+    height: 5vh;
+    line-height: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+small {
+    font-size: 0.1rem;
+}
+
+
+.compare-products-cards {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: Revel 0.5s forwards;
+}
+
+.products-card {
+    margin: 0rem 5rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.263);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 20vw;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: Revel 0.5s forwards;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.products-card>img {
+    opacity: 0.8;
+    height: 8vh;
+}
+
+.products-card p {
+    margin: 0.2rem;
+    opacity: 0.9;
+    font-size: 0.8rem;
+}
+
+.to-compare {
+    opacity: 0;
+    border-radius: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform: translateY(50px);
+    animation: Revel 1s forwards;
+}
+
+@keyframes Revel {
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

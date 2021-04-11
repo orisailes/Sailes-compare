@@ -1,0 +1,11 @@
+:root{
+    --primary:#77ab59;
+    --primary-ligth:#77ab59b4;
+    --secondary:#c3bfb4; 
+    --secondary-ligth:#c3bfb4c0; 
+ }
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}

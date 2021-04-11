@@ -1,0 +1,68 @@
+.header {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3);
+}
+
+.sailes-compare-logo {
+    height: 18vh;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3);
+    left: 44%;
+    top: -24%;
+}
+
+.header-favorite-btn {
+    height: 55%;
+    width: 2.5vw;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    background: none;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 2.4vh;
+    display: inline-flex;
+    align-items: center;
+    left: 80vw;
+    overflow:hidden;
+    transition: all 0.65s;
+    text-decoration: none;
+}
+
+ a{
+ text-decoration: none;
+}
+.header-favorite-btn i{
+    transition: all 1.1s;
+}
+
+.header-favorite-btn span{
+    transition: all 1s;
+    vertical-align: top;
+}
+
+.header span{
+    display: none;
+    overflow:hidden;
+    transition: all 1s;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.header-favorite-btn:hover {
+    background: var(--primary-ligth);
+    cursor: pointer;
+    width: 7.5vw;
+}
+
+
+.header-favorite-btn:hover > span {
+   display: inline-flex;
+}
+
+.header-favorite-btn:hover > i {
+    transform: rotateY(0.5turn)
+}

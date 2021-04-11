@@ -1,0 +1,48 @@
+.compare-page {
+    background: url('../../img/bg.png')center center/cover;
+    height: 90vh;
+    background-position: bottom;
+}
+
+
+.compare-page .oops-div img {
+    height: 60vh;
+    display: inline;
+}
+
+.compare-page .oops-div h3,
+.compare-page .oops-div h2 {
+    opacity: 0.7 !important;
+}
+
+.oops-div .btn {
+    height: 10vh;
+    width: 15vw;
+    cursor: pointer;
+    margin: 0.5rem;
+    border: none;
+    outline: none;
+    background: var(--primary);
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+.oops-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compare-page .oops-div .compare-btn-wrapper .btn {
+    opacity: 0;
+    animation: RevelMe 1s forwards ease-out;
+    transform: translateY(100px);
+    animation-delay: 1s;
+}
+
+@keyframes RevelMe {
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

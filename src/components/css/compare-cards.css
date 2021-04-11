@@ -1,0 +1,140 @@
+.flex {
+    display: flex;
+    justify-content:center ;
+}
+
+.compare-cards {
+    display: flex;
+    align-items: center;
+}
+
+.line-graph-wrapper {
+    margin-top: 7vh;
+    display: block;
+   
+}
+.line-graph,
+.pies-graph,
+.bars-graph {
+    transform:scale(1) ;
+    transition:all 0.2s ;
+}
+.line-graph:hover,
+.pies-graph:hover,
+.bars-graph:hover {
+    transform:scale(1.1)
+}
+
+.columns {
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-info-card {
+    width: 30%;
+    height: 18vh;
+    outline: 1px solid rgba(121, 121, 121, 0.474);
+    text-align: center;
+    margin: 0.5rem;
+    border-radius: 15px;
+    opacity: 0.6;
+    transition: all 0.2s;
+    transform: scale(1);
+    font-size: small;
+
+
+}
+
+.product-info-card-header{
+    text-align: center;
+    display: block;
+    opacity: 0.85;
+}
+
+
+.product-info-card:hover {
+
+    transform: scale(1.2);
+    opacity: 0.9;
+
+}
+
+
+
+.percentage-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.product-info-card p {
+    line-height: 0.2rem;
+
+}
+
+.product-info-card-image{
+    height: 8vh;
+    display: inline;
+    object-fit: contain;
+}
+
+.product-info-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-info-card-header-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-info-card-header-wrapper img{
+    margin-bottom: 0.5rem;
+}
+.big-paragraph {
+    font-size: 1.8rem;
+}
+
+.compare-clear-btn{
+    height: 4vh;
+    width: 10vw;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: var(--primary);
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: all 0.15s ease-in-out;
+    position:relative;
+    left: 45%;
+    margin-top: 2vh;
+}
+
+.compare-clear-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.info-card-add-to-compare,
+.info-card-add-to-favorite {
+    cursor: pointer;
+    width: 8vw;
+    height: 5vh;
+    line-height: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    transition:all 0.3s ;
+}
+
+.info-card-add-to-compare,
+.info-card-add-to-favorite  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
